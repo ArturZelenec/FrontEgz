@@ -2,7 +2,12 @@ const registerBtn = document.querySelector('#register-btn');
 const loginBtn = document.querySelector('#login-btn');
 const registerBox = document.querySelector('#register-box');
 const loginBox = document.querySelector('#login-box');
-
+const registerForm = document.querySelector('#register-form');
+const registerFormSbmBtn = document.querySelector('#todo-form-submit');
+const logFirstName = document.querySelector('#name-inp-log');
+const logLastName = document.querySelector('#surname-inp-log');
+const loginFormSbmBtn = document.querySelector('#login-form-submit');
+const url = 'https://testapi.io/api/azelenec/resource/reg';
 
 
 window.onload = () => {
@@ -24,11 +29,6 @@ const setButtons = () => {
 }
 
 
-
-
-
-const registerForm = document.querySelector('#register-form');
-const registerFormSbmBtn = document.querySelector('#todo-form-submit');
 
 function sendData() {
     let data = new FormData(registerForm);
@@ -52,27 +52,15 @@ function sendData() {
     })
         .then(obj => console.log(obj.json()))
         .catch((eror) => console.log(eror));
+
 }
 
 registerFormSbmBtn.addEventListener('click', (e) => {
     e.preventDefault(); // Breaks manual refresh after submit
     sendData();
+
 })
 
-
-
-
-
-
-
-
-
-
-
-const logFirstName = document.querySelector('#name-inp-log');
-const logLastName = document.querySelector('#surname-inp-log');
-const loginFormSbmBtn = document.querySelector('#login-form-submit');
-const url = 'https://testapi.io/api/azelenec/resource/reg';
 
 const options = {
     method: 'get',
@@ -89,25 +77,15 @@ function patikrintiVartotojus() {
             let arEgzistuoja = false;
             userData.data.forEach(user => {
                 if (user.userName.toLowerCase() === logFirstName.value.toLowerCase() && user.surName.toLowerCase() === logLastName.value.toLowerCase()) {
-                    console.log(`vardas ${user.userName} ir pavarde ${user.surName} ir email ${user.email}`);
                     window.alert(`Sveiki prisijunge ${user.userName} `);
-                    arEgzistuoja = true
-                    const vartotojoDuomenys = {
-
-                        regUserName: user.userName,
-                        regUserLastname: user.surName,
-
-                    };
+                    arEgzistuoja = true;
+                    window.location.href = "http://127.0.0.1:5501/todos.html?type=asd&content=asass&endDate=2022-11-10T23%3A15#"
 
                 }
-
             });
 
             if (!arEgzistuoja)
                 window.alert(`Toks vartotojas Neegzistuoja `);
-
-
-
         })
         .catch((eror) => console.log(eror));
 }

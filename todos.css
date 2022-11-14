@@ -32,7 +32,7 @@ hr {
     color: azure;
     font-size: 17px;
     width: 100%;
-    
+
 }
 
 #add-box textarea {
@@ -48,4 +48,50 @@ hr {
 
 #inp-box-content {
     width: 100%;
+}
+
+#delete-form {
+    color: black;
+    display: block;
+    width: 15%;
+    height: 90px;
+    border: none;
+    border-radius: 5px;
+    background: wheat;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+#delete-form-submit {
+    width: auto;
+    height: 30px;
+    background-color: #1f4639;
+    color: azure;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    display: flex;
+
+
+}
+
+#update-form-submit {
+    width: auto;
+    height: 30px;
+    background-color: #1f4639;
+    color: azure;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    display: flex;
+}
+
+#id-delete-form {
+    border-style: dotted;
+    cursor: not-allowed;
+    color: #777;
+
 }
