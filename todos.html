@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="todos.css">
+</head>
+<body>
+    <div class="topnav" id="top-nav">
+        <div class="left">
+            <div class="logo"><img class="todo-logo"
+                    src="https://i.pinimg.com/736x/e4/e7/50/e4e750a637dcefef70a58c1a03d31a1f--icons.jpg"
+                    alt="To do logo"></div>
+        </div>
+        <div class="center nav">
+            
+            <div class="logout">Log out</div>
+        </div>
+        <div class="right nav">
+            <i class="user"></i>
+
+        </div>
+    </div>
+
+
+    <div class="form-box center" id="add-box">
+       
+            
+        <form id="add-form" action="#">
+            <div class="inp-box">
+                <label>Type</label>
+                <input type="text" id="type-inp" name="type">
+            </div>
+            <div class="inp-box" id="inp-box-content">
+                <label>Content</label>
+                <textarea id="content-inp" name="content"></textarea>
+            </div>
+            <div class="inp-box">
+                <label>End date</label>
+                <input type="datetime-local" id="date" name="endDate">
+            </div>
+       
+
+            <button class="submit" type="submit" id="todo-form-submit">Submit</button>
+        </form>
+        
+    
+    
+    </div>
+
+    <div id="todo-text" style="margin-left: 50px;"></div>
+
+
+    
+
+
+    
+
+    <!-- <script src="main.js"></script> -->
+    <script src="todos.js"></script>
+
+    
+
+</body>
+</html>
