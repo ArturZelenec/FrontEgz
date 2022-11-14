@@ -69,6 +69,8 @@ function loadData() {
             <i class="abreviation" style="color:black">Content: ${element.content}</i></br>
             
             <i class="abreviation" style="color:red">EndDate: ${element.endDate}</i></br></br>
+
+            <i class="abreviation" style="color:blue">Id: ${element.id}</i></br></br>
             </div>
         `;
                 htmlTodo += htmlElement;

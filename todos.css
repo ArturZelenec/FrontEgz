@@ -53,7 +53,7 @@ hr {
 #delete-form {
     color: black;
     display: block;
-    width: 15%;
+    width: 190px;
     height: 90px;
     border: none;
     border-radius: 5px;
@@ -79,7 +79,7 @@ hr {
 }
 
 #update-form-submit {
-    width: auto;
+    width: 155px;
     height: 30px;
     background-color: #1f4639;
     color: azure;
